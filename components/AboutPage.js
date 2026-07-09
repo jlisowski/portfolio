@@ -3,7 +3,7 @@ export class AboutPage extends HTMLElement {
     super();
 
     //create shadow dom
-    this.root = this.attachShadow({ mode: open });
+    this.root = this.attachShadow({ mode: "open" });
 
     //insert css style element in shadowDOM
     const styles = document.createElement("style");
@@ -18,4 +18,41 @@ export class AboutPage extends HTMLElement {
 
     loadCSS();
   }
+
+  connectedCallback() {
+    const template = document.getElementById("about-page-template");
+    const content = template.content.cloneNode(true);
+    this.root.appendChild(content);
+
+    window.addEventListener("appviewchange", () => {
+      this.render();
+    });
+
+    this.render();
+  }
+
+  render() {
+    const positionElement = this.root.querySelector("#position");
+    const bioAElement = this.root.querySelector("#bio-a");
+    const bioBElement = this.root.querySelector("#bio-b");
+    const nameElement = this.root.querySelector("#name");
+    const emailElement = this.root.querySelector("#email");
+    const githubElement = this.root.querySelector("#github");
+    const linkedinElement = this.root.querySelector("#linkedin");
+    if (app.store.data) {
+      const aboutData = app.store.data.portfolio.about;
+      const socials = aboutData.socials;
+      positionElement.textContent = aboutData.position;
+      bioAElement.textContent = aboutData.bioA;
+      bioBElement.textContent = aboutData.bioB;
+      nameElement.textContent = aboutData.name;
+      emailElement.href = socials.email;
+      githubElement.href = socials.github;
+      linkedinElement.href = socials.linkedin;
+    } else {
+      positionElement.textContent = "Loading...";
+    }
+  }
 }
+
+customElements.define("about-page", AboutPage);
