@@ -3,6 +3,7 @@ import Router from "./services/Router.js";
 import proxiedStore from "./services/Store.js";
 
 import { AboutPage } from "./components/AboutPage.js";
+import { FooterPage } from "./components/Footer.js";
 
 window.app = {
   store: proxiedStore,

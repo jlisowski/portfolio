@@ -10,6 +10,17 @@
         "github": "https://github.com/jlisowski",
         "linkedin": "https://www.linkedin.com/in/jlisowskidev/"
       }
+    },
+    "footer": {
+      "certificates": {
+        "bootdev": {
+          "profile": "https://www.boot.dev/u/birdthief"
+        },
+        "coursera": {},
+        "masterdev": {
+          "profile": "https://master.dev/u/Birdthief/"
+        }
+      }
     }
   }
 }

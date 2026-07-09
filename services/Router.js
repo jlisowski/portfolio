@@ -22,19 +22,23 @@ const Router = {
       history.pushState({ route }, "", route);
     }
     let pageElement = null;
+    let footerElement = null;
     switch (route) {
       case "/":
         pageElement = document.createElement("about-page");
+        footerElement = document.createElement("footer-page");
         //pageElement.textContent = "Menu";
         break;
       default:
         pageElement = document.createElement("about-page");
+        footerElement = document.createElement("footer-page");
     }
-    if (pageElement) {
+    if (pageElement && footerElement) {
       // document.querySelector("main").children[0].remove();
       const cache = document.querySelector("main");
       cache.innerHTML = "";
-      document.querySelector("main").appendChild(pageElement);
+      cache.appendChild(pageElement);
+      cache.appendChild(footerElement);
       window.scrollX = 0;
       window.scrollY = 0;
     }
