@@ -1,0 +1,9 @@
+.wrapper {
+  font-size: var(--base-font-size);
+  font-family: "Segoe UI", "San Fransisco (SF)", "Roboto", monospace;
+  background-color: var(--platinum);
+  color: var(--onyx);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}

@@ -40,9 +40,11 @@ export class FooterPage extends HTMLElement {
     // const githubElement = this.root.querySelector("#github");
     // const linkedinElement = this.root.querySelector("#linkedin");
     if (app.store.data) {
+      certElement.innerHTML = "";
       const certData = app.store.data.portfolio.footer.certificates;
       for (let site in certData) {
         const certSite = document.createElement("li");
+        certSite.textContent = site;
         certElement.appendChild(certSite);
       }
       //   bioAElement.textContent = aboutData.bioA;
