@@ -11,49 +11,47 @@
         "linkedin": "https://www.linkedin.com/in/jlisowskidev/"
       }
     },
-    "footer": {
-      "certificates": {
-        "bootdev": {
-          "name": "Boot.dev",
-          "profile": "https://www.boot.dev/u/birdthief"
-        },
-        "coursera": {
-          "name": "Coursera",
-          "certs": [
-            {
-              "name": "Technical Support Fundamentals",
-              "url": "https://www.coursera.org/account/accomplishments/records/HUPUGABRTLSP"
-            },
-            {
-              "name": "Introduction to Software Engineering",
-              "url": "https://www.coursera.org/account/accomplishments/verify/BS4SR8MNWUPD"
-            },
-            {
-              "name": "Introduction to Web Development with HTML, CSS, JavaScript",
-              "url": "https://www.coursera.org/account/accomplishments/records/2GFD33FHF5QZ"
-            },
-            {
-              "name": "Getting Started with Git and GitHub",
-              "url": "https://www.coursera.org/account/accomplishments/records/S7XQSDV4H8UW"
-            },
-            {
-              "name": "Developing Front-End Apps with React",
-              "url": "https://www.coursera.org/account/accomplishments/records/VXHSYAEHVNPM"
-            },
-            {
-              "name": "Introduction to Cloud Computing",
-              "url": "https://www.coursera.org/account/accomplishments/records/HK5EDVD7TPAH"
-            },
-            {
-              "name": "Developing Cloud Native Applications",
-              "url": "https://www.coursera.org/account/accomplishments/records/UB36SUNUDP2F"
-            }
-          ]
-        },
-        "masterdev": {
-          "Name": "Frontend Masters",
-          "profile": "https://master.dev/u/Birdthief/"
-        }
+    "certificates": {
+      "bootdev": {
+        "name": "Boot.dev",
+        "profile": "https://www.boot.dev/u/birdthief"
+      },
+      "coursera": {
+        "name": "Coursera",
+        "certs": [
+          {
+            "name": "Technical Support Fundamentals",
+            "url": "https://www.coursera.org/account/accomplishments/records/HUPUGABRTLSP"
+          },
+          {
+            "name": "Introduction to Software Engineering",
+            "url": "https://www.coursera.org/account/accomplishments/verify/BS4SR8MNWUPD"
+          },
+          {
+            "name": "Introduction to Web Development",
+            "url": "https://www.coursera.org/account/accomplishments/records/2GFD33FHF5QZ"
+          },
+          {
+            "name": "Getting Started with Git and GitHub",
+            "url": "https://www.coursera.org/account/accomplishments/records/S7XQSDV4H8UW"
+          },
+          {
+            "name": "Developing Front-End Apps with React",
+            "url": "https://www.coursera.org/account/accomplishments/records/VXHSYAEHVNPM"
+          },
+          {
+            "name": "Introduction to Cloud Computing",
+            "url": "https://www.coursera.org/account/accomplishments/records/HK5EDVD7TPAH"
+          },
+          {
+            "name": "Developing Cloud Native Applications",
+            "url": "https://www.coursera.org/account/accomplishments/records/UB36SUNUDP2F"
+          }
+        ]
+      },
+      "masterdev": {
+        "name": "Frontend Masters",
+        "profile": "https://master.dev/u/Birdthief/"
       }
     }
   }
