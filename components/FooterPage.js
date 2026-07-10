@@ -11,7 +11,7 @@ export class FooterPage extends HTMLElement {
 
     // function to fetch css and apply to the shadow dom's style element
     async function loadCSS() {
-      const request = await fetch("/components/FooterPage.css");
+      const request = await fetch("./components/FooterPage.css");
       const css = await request.text();
       styles.textContent = css;
     }

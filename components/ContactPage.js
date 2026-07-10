@@ -10,7 +10,7 @@ export class ContactPage extends HTMLElement {
     this.root.appendChild(styles);
 
     const loadCSS = async () => {
-      const request = await fetch("/components/ContactPage.css");
+      const request = await fetch("./components/ContactPage.css");
       const css = await request.text();
       styles.textContent = css;
     };

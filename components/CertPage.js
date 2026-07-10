@@ -14,7 +14,7 @@ export class CertPage extends HTMLElement {
     this.root.appendChild(this.certificatesList);
 
     const loadCSS = async () => {
-      const request = await fetch("/components/CertPage.css");
+      const request = await fetch("./components/CertPage.css");
       const css = await request.text();
       styles.textContent = css;
     };
