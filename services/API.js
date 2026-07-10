@@ -1,5 +1,5 @@
 const API = {
-  url: "./data/portfolio.json",
+  url: new URL("../data/portfolio.json", import.meta.url).href,
   fetchData: async () => {
     const result = await fetch(API.url);
     return await result.json();
