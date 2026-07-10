@@ -17,7 +17,6 @@ export class CertPage extends HTMLElement {
       const request = await fetch("/components/CertPage.css");
       const css = await request.text();
       styles.textContent = css;
-      console.log(styles);
     };
 
     loadCSS();

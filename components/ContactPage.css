@@ -1,0 +1,22 @@
+#icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#icons li svg {
+  width: 36px;
+  height: 36px;
+}
+
+#icons svg {
+  fill: var(--windsurfing);
+}
+#icons svg:hover {
+  fill: var(--marina);
+}

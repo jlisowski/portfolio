@@ -28,13 +28,11 @@ export class FooterPage extends HTMLElement {
     const certPage = document.createElement("cert-page");
     content.querySelector("#certificates").appendChild(certPage);
 
+    const contactPage = document.createElement("contact-page");
+    content.querySelector("#contact").appendChild(contactPage);
+
     //append to shadowDOM
     this.root.appendChild(content);
-
-    //event listener for view changes
-    // window.addEventListener("appviewchange", () => {
-    //   this.render();
-    // });
 
     this.render();
   }
