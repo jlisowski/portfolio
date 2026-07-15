@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "sync": "browser-sync start --proxy 'localhost:5000' --port 8080 --files 'public/**/*' --no-ui",
+    "dev": "npx concurrently \"npm run server\" \"npm run sync\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlisowski/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlisowski/portfolio/issues"
+  },
+  "homepage": "https://github.com/jlisowski/portfolio#readme",
+  "dependencies": {
+    "connect-history-api-fallback": "^2.0.0",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
