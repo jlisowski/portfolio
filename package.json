@@ -2,11 +2,11 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "server": "nodemon server.js",
-    "sync": "browser-sync start --proxy '127.0.0.1:5000' --files 'public/**/*' --no-ui",
-    "dev": "NODE_ENV=developent nodemon server.js" 
+    "server": "NODE_ENV=development nodemon server.js",
+    "sync": "browser-sync start --proxy '127.0.0.1:3000' --files 'public/**/*' --no-ui",
+    "dev": "concurrently \"npm run server\" \"npm run sync\""
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
+    "concurrently": "^10.0.3",
     "nodemon": "^3.1.14"
   }
 }
