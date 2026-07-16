@@ -1,6 +1,6 @@
 .wrapper {
   font-size: var(--base-font-size);
-  font-family: "Segoe UI", "San Fransisco (SF)", "Roboto", monospace;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: var(--platinum);
   color: var(--onyx);
   max-width: 1000px;

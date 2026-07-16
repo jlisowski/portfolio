@@ -1,4 +1,13 @@
-.title {
+.wrapper {
+  font-size: var(--base-font-size);
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--platinum);
+  color: var(--onyx);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+
+}.title {
   font-weight: bold;
 }
 
@@ -12,7 +21,7 @@
 }
 
 .certlist li {
-  line-height: 1.2;
+  line-height: 1.4;
   padding: 0.3rem 0 0.3rem 1rem;
 }
 

@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "server": "NODE_ENV=development nodemon server.js",
-    "sync": "browser-sync start --proxy '127.0.0.1:3000' --files 'public/**/*' --no-ui",
+    "sync": "browser-sync start --proxy '127.0.0.1:5000' --files 'public/**/*' --no-ui",
     "dev": "concurrently \"npm run server\" \"npm run sync\""
   },
   "repository": {
