@@ -20,6 +20,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 @media (min-width: 750px) {
   :root {
     --base-font-size: 1.125rem;

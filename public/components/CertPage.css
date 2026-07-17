@@ -5,34 +5,49 @@
   color: var(--onyx);
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 2rem;
+}
 
-}.title {
+a {
+  color: var(--windsurfing);
+}
+
+a:hover {
+  color: var(--marina);
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--windsurfing);
+  letter-spacing: 0.25em;
+}
+
+h3 {
+  color: var(--windsurfing);
+}
+
+#certTree {
+  list-style-type: none;
+}
+
+.certSite {
   font-weight: bold;
+}
+
+.certlist li {
+  white-space: nowrap;
+  line-height: 1.5;
+  list-style-type: none;
 }
 
 .certificate {
   font-weight: normal;
 }
 
-.certlist {
-  padding: 0 0 1rem 0;
-  list-style-type: none;
-}
-
-.certlist li {
-  line-height: 1.4;
-  padding: 0.3rem 0 0.3rem 1rem;
-}
-
-a {
-  color: var(--windsurfing);
-}
-a:hover {
-  color: var(--marina);
-}
-
 @media (min-width: 750px) {
+  .wrapper {
+    padding: 5rem;
+  }
   .certlist li {
     padding: 0 0 0 1rem;
   }

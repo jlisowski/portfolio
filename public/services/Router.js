@@ -21,24 +21,31 @@ const Router = {
     if (addToHistory) {
       history.pushState({ route }, "", route);
     }
-    let pageElement = null;
+
+    let aboutElement = null;
     let footerElement = null;
+    let certsElement = null;
+    let projectsElement = null;
+
     switch (route) {
       case "/":
-        pageElement = document.createElement("about-page");
+        aboutElement = document.createElement("about-page");
         footerElement = document.createElement("footer-page");
-        //pageElement.textContent = "Menu";
+        certsElement = document.createElement("cert-page");
+        projectsElement = document.createElement("projects-page");
         break;
       default:
-        pageElement = document.createElement("about-page");
+        aboutElement = document.createElement("about-page");
+        certsElement = document.createElement("cert-page");
         footerElement = document.createElement("footer-page");
+        projectsElement = document.createElement("projects-page");
     }
-    if (pageElement && footerElement) {
-      // document.querySelector("main").children[0].remove();
-      const cache = document.querySelector("main");
-      cache.innerHTML = "";
-      cache.appendChild(pageElement);
-      cache.appendChild(footerElement);
+    if (aboutElement && footerElement && certsElement && projectsElement) {
+      const mainCache = document.querySelector("main");
+      mainCache.querySelector("#about").appendChild(aboutElement);
+      mainCache.querySelector("#certs").appendChild(certsElement);
+      mainCache.querySelector("#projects").appendChild(projectsElement);
+      document.querySelector("footer").appendChild(footerElement);
       window.scrollX = 0;
       window.scrollY = 0;
     }

@@ -24,10 +24,6 @@ export class FooterPage extends HTMLElement {
     const template = document.getElementById("footer-template");
     const content = template.content.cloneNode(true);
 
-    //connect certificates component
-    const certPage = document.createElement("cert-page");
-    content.querySelector("#certificates").appendChild(certPage);
-
     const contactPage = document.createElement("contact-page");
     content.querySelector("#contact").appendChild(contactPage);
 

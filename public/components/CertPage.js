@@ -9,10 +9,6 @@ export class CertPage extends HTMLElement {
     const styles = document.createElement("style");
     this.root.appendChild(styles);
 
-    this.certificatesList = document.createElement("ul");
-    this.certificatesList.className = "certlist";
-    this.root.appendChild(this.certificatesList);
-
     const loadCSS = async () => {
       const request = await fetch("./components/CertPage.css");
       const css = await request.text();
@@ -23,6 +19,10 @@ export class CertPage extends HTMLElement {
   }
 
   connectedCallback() {
+    const template = document.getElementById("certs-page-template");
+    const content = template.content.cloneNode(true);
+    this.root.appendChild(content);
+
     window.addEventListener("appviewchange", () => {
       this.render();
     });
@@ -31,18 +31,15 @@ export class CertPage extends HTMLElement {
   }
 
   render() {
-    if (!this.certificatesList) {
-      console.warn("CertPage: certificates list not found");
-      return;
-    }
-
+    const certificatesList = this.root.querySelector("#certTree");
+    console.log(certificatesList);
     if (app.store.data) {
-      this.certificatesList.innerHTML = "";
+      certificatesList.innerHTML = "";
       const certData = app.store.data.portfolio.certificates;
       for (let site in certData) {
         const siteElement = document.createElement("li");
         siteElement.id = site;
-        siteElement.className = "title";
+        siteElement.className = "certSite";
 
         const certListElement = document.createElement("ul");
         certListElement.className = "certlist";
@@ -70,10 +67,10 @@ export class CertPage extends HTMLElement {
           siteElement.textContent = `${certData[site].name}`;
           siteElement.appendChild(certListElement);
         }
-        this.certificatesList.appendChild(siteElement);
+        certificatesList.appendChild(siteElement);
       }
     } else {
-      this.certificatesList.textContent = "Loading...";
+      certificatesList.textContent = "Loading...";
     }
   }
 }
