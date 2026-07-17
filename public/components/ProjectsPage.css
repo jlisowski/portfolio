@@ -1,17 +1,3 @@
-.wrapper {
-  padding: 1rem;
-  font-size: var(--base-font-size);
-  font-family: "IBM Plex Sans", sans-serif;
-  background-color: var(--platinum);
-  color: var(--onyx);
-  max-width: 1000px;
-  margin: 0 auto;
-}
-#projects-container {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 2rem;
-}
 
 article  {
   padding: 1rem;
@@ -41,12 +27,6 @@ p {
   line-height: 1.5;
 }
 
-#projects-container img {
-  max-width: 100%;
-  border-radius: var(--corners);
-  grid-row: 1/2;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -58,10 +38,37 @@ ul {
 }
 
 li {
-  border-radius: var(--corners);
+  border-radius: var(--corners-sm);
   padding: 0.2rem 1rem;
-  background-color: var(--windsurfing);
+  background-color: var(--marina);
   color: var(--white);
+  font-size: calc(var(--base-font-size) * 0.8);
+}
+.wrapper {
+  padding: 1rem;
+  font-size: var(--base-font-size);
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--platinum);
+  color: var(--onyx);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.img-border {
+  border: 1px solid var(--onyx);
+}
+
+#projects-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  text-align: center;
+}
+
+#projects-container img {
+  max-width: 100%;
+  border-radius: var(--corners);
+  grid-row: 1/2;
 }
 
 @media (min-width: 750px) {
