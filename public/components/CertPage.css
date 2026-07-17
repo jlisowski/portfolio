@@ -35,20 +35,23 @@ h3 {
 }
 
 .certlist li {
-  white-space: nowrap;
   line-height: 1.5;
-  list-style-type: none;
 }
 
 .certificate {
   font-weight: normal;
 }
-
+@media (min-width: 420px) {
+  .certlist {
+    list-style-type: none;
+  }
+}
 @media (min-width: 750px) {
   .wrapper {
     padding: 5rem;
   }
   .certlist li {
     padding: 0 0 0 1rem;
+    list-style-type: none;
   }
 }

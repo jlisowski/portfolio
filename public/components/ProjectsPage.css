@@ -1,4 +1,3 @@
-
 article  {
   padding: 1rem;
   background-color: var(--white);
@@ -65,26 +64,30 @@ li {
   text-align: center;
 }
 
-#projects-container img {
+img {
   max-width: 100%;
   border-radius: var(--corners);
   grid-row: 1/2;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 950px) {
+  ul  {
+    justify-content: flex-start;
+  }
   .wrapper {
     padding: 5rem;
   }
+  .text {
+    text-align: left;
+  }
   article {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
   }
-  img {
-    object-fit: contain;
-    object-position: none;
+  article img {
+    max-width: 50%;
     height: auto;
-    width: auto;
-    overflow: auto;
-    border-radius: var(--corners);
+    grid-row: auto;
+    object-fit: contain;
   }
 }
