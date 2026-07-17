@@ -1,8 +1,4 @@
 .wrapper {
-  font-size: var(--base-font-size);
-  font-family: "IBM Plex Sans", sans-serif;
-  /* background-color: var(--platinum);
-  color: var(--onyx);*/
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 1rem 0 1rem;
@@ -40,7 +36,7 @@ img {
 .profile svg {
   width: 36px;
   height: 36px;
-  fill: var(--onyx);
+  fill: var(--windsurfing);
 }
 
 .profile ul {
