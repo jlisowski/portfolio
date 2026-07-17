@@ -13,6 +13,7 @@
 
 html {
   box-sizing: border-box;
+  color-scheme: light dark;
 }
 
 *,

@@ -43,8 +43,8 @@ const Router = {
     if (aboutElement && footerElement && certsElement && projectsElement) {
       const mainCache = document.querySelector("main");
       mainCache.querySelector("#about").appendChild(aboutElement);
-      mainCache.querySelector("#certs").appendChild(certsElement);
       mainCache.querySelector("#projects").appendChild(projectsElement);
+      mainCache.querySelector("#certs").appendChild(certsElement);
       document.querySelector("footer").appendChild(footerElement);
       window.scrollX = 0;
       window.scrollY = 0;
