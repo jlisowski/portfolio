@@ -1,11 +1,12 @@
 article  {
   padding: 1rem;
-  background-color: var(--white);
   border-radius: var(--corners);
+  border: 2px solid light-dark(var(--onyx),var(--platinum));
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
-  color: var(--onyx);
+  color: var(--charcoal);
+  background-color: var(--platinum);
 }
 
 h2 {
@@ -69,12 +70,6 @@ img {
   ul  {
     justify-content: flex-start;
   }
-  .wrapper {
-    padding: 5rem 5rem 0 5rem;
-  }
-  .text {
-    text-align: left;
-  }
   article {
     display: flex;
     flex-direction: row;
@@ -84,5 +79,15 @@ img {
     height: auto;
     grid-row: auto;
     object-fit: contain;
+  }
+  h2 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .wrapper {
+    padding: 5rem 5rem 0 5rem;
+  }
+  .text {
+    text-align: left;
   }
 }

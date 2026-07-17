@@ -6,10 +6,20 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css" />
     <script src="./app.js" type="module"></script>
   </head>
+  <header>
+    <fieldset id="mode-switcher" class="radio-switch">
+      <div>
+        <input type="radio" id="light" name="color-scheme" value="light">
+        <label for="light">Light</label>
+        <input type="radio" id="dark" name="color-scheme" value="dark" checked>
+        <label for="dark">Dark</label>
+      </div>
+    </fieldset>
+  </header>
   <body>
     <main>
       <div id="about"></div>
@@ -117,7 +127,7 @@
               <li>SVG</li>
             </ul>
           </div>
-          <img src="https://assets.codepen.io/296057/fem-maglime.jpg" alt="Magenta Lime layout, featuring albums, reviews, a playlist, and an audio interface.">
+          <img src="./data/images/fem-maglime.jpg" alt="Magenta Lime layout, featuring albums, reviews, a playlist, and an audio interface.">
         </article>
         <article>
           <div class="text">
@@ -128,7 +138,7 @@
               <li>CSS</li>
             </ul>
           </div>
-          <img src="https://assets.codepen.io/296057/fem-grid.jpg" alt="Grid-based layout with 3 columns and 4 rows, some merged, featuring planets and moons." class="img-border">
+          <img src="./data/images/fem-grid.jpg" alt="Grid-based layout with 3 columns and 4 rows, some merged, featuring planets and moons." class="img-border">
         </article>
         <article>
           <div class="text">
@@ -139,7 +149,7 @@
               <li>CSS</li>
             </ul>
           </div>
-          <img src="https://assets.codepen.io/296057/fem-projects.jpg" alt="Our Team page featuring 6 images of people in 2 rows with social media icons overlapping each image.">
+          <img src="./data/images/fem-projects.jpg" alt="Our Team page featuring 6 images of people in 2 rows with social media icons overlapping each image.">
         </article>
       </div>
     </div>
